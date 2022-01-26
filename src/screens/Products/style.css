@@ -1,0 +1,32 @@
+.banner_products {
+  margin-top: 64px;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.banner_products h2 {
+  color: cadetblue;
+  font-size: 40px;
+  font-stretch: expanded;
+}
+
+#products {
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+
+.product-container {
+  margin-left: 40px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

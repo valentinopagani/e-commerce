@@ -1,0 +1,46 @@
+#cart {
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+
+#cart .MuiButton-containedSecondary {
+  color: #0d1117;
+}
+
+.actions {
+  float: right;
+  margin: 20px 0;
+}
+
+.actions a {
+  margin-left: 15px;
+}
+
+/* ========= cart Banner =========== */
+.cart-banner {
+  padding-top: 150px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.cart-banner > div > div {
+  align-items: center;
+}
+
+.cart-banner .brand {
+  display: flex;
+  align-items: center;
+}
+
+.cart-banner .brand svg {
+  width: 100%;
+  font-size: 220px;
+}
+
+.cart-banner .title {
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}

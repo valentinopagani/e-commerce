@@ -1,0 +1,42 @@
+.MuiAppBar-colorPrimary.custom-navbar {
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cart-wrapper h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.custom-navbar .custom-title {
+  display: flex;
+}
+
+.custom-navbar .custom-title .logo {
+  width: 50px;
+}
+
+.cart-wrapper .custom-cart {
+  font-size: 35px;
+  color: black;
+}
+
+nav {
+  margin-left: 10px;
+}
+
+nav .nav_a {
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 5px;
+}

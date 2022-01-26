@@ -1,0 +1,26 @@
+{ cartItems, totalCost }
+
+const location = useLocation();
+
+ShoppingBagOutlinedIcon
+
+{location.pathname === "/cart" ? (
+  <div className="cart-wrapper">
+    <h2>
+      Total cost: <strong>{totalCost}</strong>
+    </h2>
+  </div>
+) : (
+  <div className="cart-wrapper">
+    <IconButton
+      component={Link}
+      to="/cart"
+      aria-label="Show cart contents"
+      color="inherit"
+    >
+      <Badge badgeContent={cartItems} color="error">
+        <ShoppingBagOutlinedIcon className="custom-cart" />
+      </Badge>
+    </IconButton>
+  </div>
+)}

@@ -1,0 +1,69 @@
+.card {
+  position: relative;
+  width: 300px;
+  text-align: center;
+}
+
+.MuiCardMedia-root {
+  width: 300px;
+  height: 420px;
+}
+
+.card .content {
+  padding-bottom: 0;
+}
+
+.title {
+  margin-top: 0.7rem !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+
+.actions-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .add-button,
+.card:hover .view-button {
+  opacity: 1;
+}
+
+.card .add-button {
+  position: absolute;
+  bottom: 125px;
+  left: 100px;
+  background-color: #000000bd;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.card .add-button:hover {
+  background-color: #000000;
+}
+
+.card .add-button svg {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.card .view-button {
+  position: absolute;
+  bottom: 125px;
+  right: 100px;
+  background-color: #000000bd;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.card .view-button:hover {
+  background-color: #000000;
+}
+
+.card .view-button svg {
+  color: #ffffff;
+  font-size: 25px;
+}
