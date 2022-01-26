@@ -9,24 +9,23 @@ const Products = ({ categories, addProduct }) => {
   return (
     <div>
       <div className="banner_products">
-        <h2>PRODUCTOS</h2>
+        <div className="banner_products_content">
+          <h2>PRODUCTOS</h2>
+        </div>
       </div>
 
       {categories.map((category) => {
         return (
-          <Container id="products">
-            <Typography className="headline" variant="h3" component="h2">
-              {category.name}
-            </Typography>
-            <hr />
-            <Grid container className="product-container">
+          <div id="products">
+            <h2 className="category">{category.name}</h2>
+            <div className="product-container">
               {category.productsData.map((product) => (
-                <Grid key={product.id} item xs={12} sm={6} md={4}>
+                <div key={product.id} item xs={12} sm={6} md={4}>
                   <Product product={product} addProduct={addProduct} />
-                </Grid>
+                </div>
               ))}
-            </Grid>
-          </Container>
+            </div>
+          </div>
         );
       })}
     </div>
