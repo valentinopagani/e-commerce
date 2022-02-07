@@ -1,4 +1,3 @@
-import { Grid, Container, Typography } from "@mui/material";
 import Product from "../../components/Product/index";
 import Spinner from "../../components/Spinner/Spinner";
 import "./style.css";
