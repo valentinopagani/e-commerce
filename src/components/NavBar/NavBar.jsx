@@ -5,6 +5,7 @@ import {
   IconButton,
   Badge,
   Typography,
+  Tooltip,
 } from "@mui/material";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import { Link, useLocation } from "react-router-dom";
@@ -30,13 +31,13 @@ const NavBar = ({ cartItems, totalCost }) => {
 
             <nav>
               <Link to="/" className="nav_a">
-                INICIO 🏠
-              </Link>
-              <Link to="/productos" className="nav_a">
-                PRODUCTOS 🥼
+                INICIO Y PRODUCTOS
               </Link>
               <Link to="/" className="nav_a">
                 ENCONTRANOS 🚩
+              </Link>
+              <Link to="/" className="nav_a">
+                ACERCA DE
               </Link>
             </nav>
 
@@ -48,16 +49,18 @@ const NavBar = ({ cartItems, totalCost }) => {
               </div>
             ) : (
               <div className="cart-wrapper">
-                <IconButton
-                  component={Link}
-                  to="/cart"
-                  aria-label="Show cart contents"
-                  color="inherit"
-                >
-                  <Badge badgeContent={cartItems} color="error">
-                    <ShoppingBagOutlinedIcon className="custom-cart" />
-                  </Badge>
-                </IconButton>
+                <Tooltip title="ver compras">
+                  <IconButton
+                    component={Link}
+                    to="/cart"
+                    aria-label="Show cart contents"
+                    color="inherit"
+                  >
+                    <Badge badgeContent={cartItems} color="error">
+                      <ShoppingBagOutlinedIcon className="custom-cart" />
+                    </Badge>
+                  </IconButton>
+                </Tooltip>
               </div>
             )}
           </Toolbar>

@@ -39,20 +39,23 @@ const CustomCard = ({
             {product.price.formatted_with_symbol}
           </Typography>
 
-          <IconButton
-            className="add-button"
-            onClick={() => {
-              addProduct(product.id, 1);
-            }}
-            title="Agregar a la Bolsa"
-          >
-            <ShoppingBagOutlinedIcon />
-          </IconButton>
-
-          <Link to={`/product-view/${product.id}`} title="Ver Producto">
-            <IconButton className="view-button">
-              <VisibilityOutlined />
+          <Tooltip title="añadir producto" placement="top">
+            <IconButton
+              className="add-button"
+              onClick={() => {
+                addProduct(product.id, 1);
+              }}
+            >
+              <ShoppingBagOutlinedIcon />
             </IconButton>
+          </Tooltip>
+
+          <Link to={`/product-view/${product.id}`}>
+            <Tooltip title="ver producto" placement="top">
+              <IconButton className="view-button">
+                <VisibilityOutlined />
+              </IconButton>
+            </Tooltip>
           </Link>
         </>
       )}

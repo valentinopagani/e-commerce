@@ -1,5 +1,5 @@
-import Product from "../../components/Product/index";
-import Spinner from "../../components/Spinner/Spinner";
+import Product from "../Product/index";
+import Spinner from "../Spinner/Spinner";
 import "./style.css";
 
 const Products = ({ categories, addProduct }) => {
@@ -9,7 +9,7 @@ const Products = ({ categories, addProduct }) => {
     <div>
       <div className="banner_products">
         <div className="banner_products_content">
-          <h2>PRODUCTOS</h2>
+          <h2>NUESTROS PRODUCTOS</h2>
         </div>
       </div>
 

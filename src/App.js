@@ -3,11 +3,10 @@ import { CssBaseline } from "@mui/material";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { commerce } from "./lib/commerce";
 import NavBar from "./components/NavBar/NavBar";
-import Products from "./screens/Products/Products";
+import Products from "./components/Products/Products";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import ProductView from "./components/ProductView/ProductView";
-import Home from "./screens/Home/Home";
 
 function App() {
   const [categories, setCategories] = useState([]);
@@ -100,11 +99,9 @@ function App() {
         />
 
         <Routes>
-          <Route exact path="/" element={<Home />} />
-
           <Route
             exact
-            path="/productos"
+            path="/"
             element={
               <Products categories={categories} addProduct={addProduct} />
             }

@@ -25,6 +25,7 @@ const Cart = ({
   };
 
   if (!cartData.line_items || !cartData.line_items.length) return loading();
+
   return (
     <Container id="cart">
       <Grid container justify="center" spacing={4}>
