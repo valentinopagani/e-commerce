@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+.banner_home {
+  margin-top: 10vh;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-ink-dragons-landscape-background-image_164503.jpg");
+  background-size: cover;
+}
+
+.banner_home_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000005b;
+}
+
+.banner_home_content h1 {
+  color: white;
+  font-size: 100px;
+  font-family: "Smooch";
+}
+
 .banner_products {
   margin-top: 85px;
   margin-left: auto;

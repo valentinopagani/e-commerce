@@ -7,6 +7,12 @@ const Products = ({ categories, addProduct }) => {
 
   return (
     <div>
+      <div className="banner_home">
+        <div className="banner_home_content">
+          <h1>Emme R301</h1>
+        </div>
+      </div>
+
       <div className="banner_products">
         <div className="banner_products_content">
           <h2>NUESTROS PRODUCTOS</h2>

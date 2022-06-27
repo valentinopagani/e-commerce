@@ -60,7 +60,7 @@ const CustomCard = ({
         </>
       )}
       {cart && (
-        <Typography gutterBottom variant="h5">
+        <Typography className="price" gutterBottom>
           {product.price.formatted_with_symbol}
         </Typography>
       )}

@@ -1,14 +1,14 @@
 .card {
   display: flex;
-  width: 300px;
+  width: 280px;
   position: relative;
   text-align: center;
   margin: 20px;
 }
 
 .MuiCardMedia-root {
-  width: 300px;
-  height: 420px;
+  width: 260px;
+  height: 380px;
 }
 
 .card .content {
@@ -17,8 +17,12 @@
 
 .title {
   margin-top: 0.7rem !important;
-  font-size: 25px !important;
+  font-size: 22.5px !important;
   font-weight: bold !important;
+}
+
+.price {
+  font-size: 22.5px;
 }
 
 .actions-content {
@@ -32,10 +36,18 @@
   opacity: 1;
 }
 
+.card:hover .add-button {
+  left: 90px;
+}
+
+.card:hover .view-button {
+  right: 90px;
+}
+
 .card .add-button {
   position: absolute;
   bottom: 125px;
-  left: 100px;
+  left: 20px;
   background-color: #000000bd;
   opacity: 0;
   z-index: 1;
@@ -54,7 +66,7 @@
 .card .view-button {
   position: absolute;
   bottom: 125px;
-  right: 100px;
+  right: 20px;
   background-color: #000000bd;
   opacity: 0;
   z-index: 1;
