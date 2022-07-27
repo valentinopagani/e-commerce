@@ -1,8 +1,7 @@
 .MuiAppBar-colorPrimary.custom-navbar {
-  background-color: #111;
-  color: white;
+  background-color: black;
   display: flex;
-  height: 10vh;
+  height: 70px;
   align-items: center;
   justify-content: center;
 }
@@ -17,7 +16,7 @@
 .cart-wrapper h2 {
   margin: 0;
   font-size: 25px;
-  background-color: #ffff9a;
+  color: #ffff4d;
 }
 
 .custom-navbar .custom-title {
@@ -41,7 +40,8 @@ nav .nav_a {
   margin-left: 20px;
   font-size: 18px;
   padding: 5px;
-  color: #ddd;
+  color: #dedede;
+  text-decoration: none;
 }
 
 nav .nav_a:hover {

@@ -3,10 +3,11 @@ import { CssBaseline } from "@mui/material";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { commerce } from "./lib/commerce";
 import NavBar from "./components/NavBar/NavBar";
-import Products from "./components/Products/Products";
+import Home from "./Screens/Home/Home";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import ProductView from "./components/ProductView/ProductView";
+import Location from "./Screens/Location/Location";
 
 function App() {
   const [categories, setCategories] = useState([]);
@@ -102,10 +103,10 @@ function App() {
           <Route
             exact
             path="/"
-            element={
-              <Products categories={categories} addProduct={addProduct} />
-            }
+            element={<Home categories={categories} addProduct={addProduct} />}
           />
+
+          <Route exact path="/encontranos" element={<Location />} />
 
           <Route
             exact

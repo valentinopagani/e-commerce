@@ -33,7 +33,7 @@ const NavBar = ({ cartItems, totalCost }) => {
               <Link to="/" className="nav_a">
                 INICIO Y PRODUCTOS
               </Link>
-              <Link to="/" className="nav_a">
+              <Link to="/encontranos" className="nav_a">
                 ENCONTRANOS 🚩
               </Link>
               <Link to="/" className="nav_a">
