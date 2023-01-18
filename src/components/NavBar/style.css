@@ -1,5 +1,5 @@
 .MuiAppBar-colorPrimary.custom-navbar {
-  background-color: black;
+  background-color: white;
   display: flex;
   height: 70px;
   align-items: center;
@@ -16,7 +16,7 @@
 .cart-wrapper h2 {
   margin: 0;
   font-size: 25px;
-  color: #ffff4d;
+  color: orangered;
 }
 
 .custom-navbar .custom-title {
@@ -24,26 +24,28 @@
 }
 
 .custom-navbar .custom-title .logo {
-  width: 70px;
+  width: 60px;
 }
 
 .cart-wrapper .custom-cart {
   font-size: 35px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 nav {
-  margin-left: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 nav .nav_a {
-  margin-left: 20px;
+  margin: 0 25px;
   font-size: 18px;
-  padding: 5px;
-  color: #dedede;
+  padding: 10px;
+  color: #111111;
   text-decoration: none;
+  transition: all 0.4s;
 }
 
 nav .nav_a:hover {
-  color: white;
+  color: orangered;
 }

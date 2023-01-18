@@ -1,6 +1,8 @@
-#root {
-  background-color: black;
-  color: white;
+#body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: white;
 }
 
 ::selection {

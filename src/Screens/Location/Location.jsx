@@ -1,7 +1,17 @@
+import "./style.css";
+
 const Location = () => {
   return (
-    <div>
-      <h2>Encontranos en Villa Maria</h2>
+    <div className="location">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <center>
+        <h2>Encontranos en Santa Marta 601, Villa María, Córdoba!!</h2>
+      </center>
     </div>
   );
 };

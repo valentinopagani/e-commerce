@@ -10,7 +10,7 @@ const Home = ({ categories, addProduct }) => {
     <div>
       <div className="banner_home">
         <div className="banner_home_content">
-          <h1>Emme R-301</h1>
+          <h1>good vibes.</h1>
         </div>
         <div className="gradient" />
       </div>

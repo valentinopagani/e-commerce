@@ -8,6 +8,7 @@ import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import ProductView from "./components/ProductView/ProductView";
 import Location from "./Screens/Location/Location";
+import "./App.css";
 
 function App() {
   const [categories, setCategories] = useState([]);
@@ -89,7 +90,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div id="body">
         <CssBaseline />
         <NavBar
           cartItems={cartData.total_items}
